@@ -15,7 +15,7 @@
 
 
 
-             var firebase = require("firebase");
+           //  var firebase = require("firebase");
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -44,9 +44,10 @@ function popup(){
 		//if successful
    window.alert("Hello " + userEmail +" ,"+ userPass);
 	console.log("All is well");
+	window.location = 'http://localhost:8000/index'
 	
 
-}
+}  //end of popup / login with password and email 
 
 function logout(){
 
