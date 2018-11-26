@@ -1,0 +1,28 @@
+.box {
+    width: 500px;
+    margin: 200px 0;
+}
+
+
+.float {
+    position: absolute;
+    z-index: 2;
+}
+
+.form {
+    margin-left: 145px;
+}
+
+ @font-face { font-family: dodger3import; src: url('dodger3.ttf'); } 
+ @font-face { font-family: dodger3laser; src: url('dodger3laser.ttf'); } 
+  @font-face { font-family: dodger33dimport; src: url('dodger33d.ttf'); } 
+ 
+ h1, label{
+	 
+	 font-family: dodger33dimport;
+	 font-size:30dp;
+ }
+ 
+ label{
+	 color: white;
+ }

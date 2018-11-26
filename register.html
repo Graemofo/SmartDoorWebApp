@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+     <link rel="stylesheet" type="text/css" href="/css/style.css">
+     
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+<body id="LoginForm">
+<div class="container">
+
+<h1 class="center">Smart Door</h1>
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+       <h2>Register Here</h2>
+       <p>Please enter your email and password</p>
+    </div>
+  
+          <div class="form-group">
+              <input type="email" class="form-control" id="inputEmail_register" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" id="inputPassword_register" placeholder="Password">
+          </div>
+          <div class="forgot">
+              <a href="reset.html">Forgot password?</a>
+          </div>
+          <button id="registerButton" onclick="register()" type="submit" class="btn btn-primary">Register</button>
+ 
+    </div>
+    <a class="botto-text" href="login">Already registered? Sign in here !!</a>
+
+</div></div></div>
+
+<script type="text/javascript" src="/js/index.js"></script> 
+
+
+
+          <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+          <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyCOAsUtv0LWbKAtB3EiOQuIkWOr-MhPkGE",
+              authDomain: "smartdoormobileapp.firebaseapp.com",
+              databaseURL: "https://smartdoormobileapp.firebaseio.com",
+              projectId: "smartdoormobileapp",
+              storageBucket: "smartdoormobileapp.appspot.com",
+              messagingSenderId: "186419306764"
+            };
+            firebase.initializeApp(config);
+          </script>
+</body>
+</html>
