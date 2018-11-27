@@ -60,7 +60,8 @@
             <div class="btn-group">		
         			<button type="button" class="btn btn-primary btn-lg">Create</button>
                     <button onclick="message()" type="submit" class="btn btn-primary btn-lg" >Show</button>
-                    <button onclick="logout()" type="submit" class="btn btn-primary btn-lg" >Logout</button>
+                    <button id="logoutButton" onclick="logout()" type="submit" class="btn btn-primary btn-lg" >Logout</button>
+                    <script type="text/javascript" src="/js/index.js"></script>
             </div>
 
         </div>
@@ -80,6 +81,20 @@
     </div>
 </div>
 
+
+          <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+          <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyCOAsUtv0LWbKAtB3EiOQuIkWOr-MhPkGE",
+              authDomain: "smartdoormobileapp.firebaseapp.com",
+              databaseURL: "https://smartdoormobileapp.firebaseio.com",
+              projectId: "smartdoormobileapp",
+              storageBucket: "smartdoormobileapp.appspot.com",
+              messagingSenderId: "186419306764"
+            };
+            firebase.initializeApp(config);
+          </script>
 
 
 
